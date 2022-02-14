@@ -2,6 +2,13 @@
 
 This is a bookmark manager for people
 
+# Installing the database
+
+- Connect to psql
+- Create the database using the psql command `CREATE DATABASE bookmark_manager;`
+- Connect to the database using the pqsl command `\c bookmark_manager;`
+- Run the query we have saved in the file 01_create_bookmarks_table.sql
+
 ## Installation
 ----------------------
 Install gems with [bundler](https://bundler.io/ "bundler") 
