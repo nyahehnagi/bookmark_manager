@@ -9,6 +9,16 @@ This is a bookmark manager for people
 - Connect to the database using the pqsl command `\c bookmark_manager;`
 - Run the query we have saved in the file 01_create_bookmarks_table.sql
 
+# Setting up the test database
+connect to psql prompt either as your current user or admin.
+Be mindful  how you are connected, if you connect to a database and not as admin you will
+need to switch between databases after creating the test database. use `\connect bookmark_manager_test;` if needs be
+~~~~
+$> psql
+admin=# CREATE DATABASE "bookmark_manager_test";
+admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+~~~~
+
 ## Installation
 ----------------------
 Install gems with [bundler](https://bundler.io/ "bundler") 
