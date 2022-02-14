@@ -10,7 +10,6 @@ class Bookmark
     result.map { |bookmark| bookmark['url'] }
   end
 end
-
 # {"id"=>"1", "url"=>"http://www.makersacademy.com"}
 # {"id"=>"4", "url"=>"http://www.google.com"}
 # {"id"=>"2", "url"=>"http://www.destroyallsoftware.com"}
